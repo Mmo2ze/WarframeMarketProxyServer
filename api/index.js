@@ -14,7 +14,7 @@ app.use(cors({
 app.use(
     '/api',
     createProxyMiddleware({
-        target: 'https://api.warframe.market/v1',
+        target: 'https://api.warframe.market/v2',
         changeOrigin: true,
         pathRewrite: {
             '^/api': '', // remove /api prefix
