@@ -6,7 +6,7 @@ const app = express();
 
 // ✅ Allow requests from your Angular frontend
 app.use(cors({
-    origin: 'http://localhost:4200',
+    origin: ['http://localhost:4200','https://warframe-market-analysts-jox4.vercel.app/'],
     credentials: true
 }));
 
